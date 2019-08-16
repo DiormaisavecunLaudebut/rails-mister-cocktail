@@ -11,8 +11,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   </head>
 
-  <body>
+  <body style='background-color:purple;'>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark mb-5 d-flex justify-content-between">
+      <%= link_to "New cocktail", new_cocktail_path, class: 'navbar-brand'%>
+      <i class="fas fa-cocktail" style='font-size: 30px;color:white;'></i>
+</nav>
     <%= yield %>
     <%= javascript_include_tag "application" %>
     <%= javascript_pack_tag "application" %>
+  </body>
 </html>
